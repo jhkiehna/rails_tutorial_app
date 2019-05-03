@@ -27,5 +27,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_template 'users/show'
     #the tutorial says to put this assertions here, but they cause a method not found error
     # assert_not flash.FILL_IN
+    assert is_logged_in?
   end
 end
